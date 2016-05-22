@@ -1,9 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hello World!</title>
+        <title>nwSIP</title>
     </head>
-    <body>
-        <h1>Hello World!</h1>
+    <body style="background-color:#ababab;" >
+        <div>
+            <video id="remoteVideo"></video>
+            <video id="localVideo" muted="muted"></video>
+        </div>
+        
+        <script src="js/sip.js"></script>
+        <script>
+var session;
+
+var userAgent = new SIP.UA();
+var options = {
+    media: {
+        constraints: {
+            audio: true,
+            video: true
+        },
+        render: {
+            remote: document.getElementById('remoteVideo'),
+            local: document.getElementById('localVideo')
+        }
+    }
+};
+
+session = userAgent.invite('sip:welcome@onsip.com', options);
+        </script>
     </body>
 </html>
