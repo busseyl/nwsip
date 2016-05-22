@@ -1,0 +1,21 @@
+{
+  "name": "nwsip",
+  "description": "nw.js SIP client",
+  "main": "index.js",
+  "authors": [
+    "Lucas Bussey"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/busseyl/nwsip",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "sip.js": "^0.7.5"
+  }
+}
