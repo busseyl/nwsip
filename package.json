@@ -1,0 +1,24 @@
+{
+  "name": "nwsip",
+  "version": "1.0.0",
+  "description": "nw.js SIP client",
+  "main": "index.js",
+  "dependencies": {
+    "nwjs": "^1.4.2",
+    "sip.js": "^0.7.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/busseyl/nwsip.git"
+  },
+  "author": "Lucas Bussey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/busseyl/nwsip/issues"
+  },
+  "homepage": "https://github.com/busseyl/nwsip#readme"
+}
